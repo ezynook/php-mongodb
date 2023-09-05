@@ -1,0 +1,30 @@
+version: '3'
+services:
+
+  web:
+    build: ./php/
+    container_name: web
+    ports:
+      - 80:80
+    restart: always
+    volumes:
+      - ./frontend:/var/www/html
+    links:
+      - mongo
+    networks:
+      - mynetwork
+    
+  mongo:
+    image: mongo
+    restart: always
+    #environment:
+     # MONGO_INITDB_ROOT_USERNAME: root
+      #MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - 27017:27017
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

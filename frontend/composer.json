@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.16",
+        "ramsey/uuid": "^4.7"
+    }
+}
