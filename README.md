@@ -9,23 +9,33 @@
 | <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/jquery-1-logo.png" width="60">  | >=3.5    |
 
 ---
-# Deploy
-Pull project
+# 👉 ขั้นตอนการติดตั้ง
+✅ ดาวน์โหลดโปรเจ็ก
 ```bash
 git clone https://github.com/ezynook/php-mongodb.git
 ```
-Change path to project
+✅ เข้าไปยัง directory
 ```bash
 cd php-mongodb
 ```
-Start and build Container
+✅ เริ่ม start and build
 ```bash
 docker-compose up -d --build
 ```
-Access on Browser
+✅ เข้าใช้งานผ่าน Browser
 ```bash
 http://localhost
 ```
+---
+# 👉 ใช้งานแบบไม่ผ่าน Docker
+[Download MongoDB](https://www.mongodb.com/try/download/community) ** เลือกตามระบบปฎิบัติการของคุณ
+<br>
+[Download XAMPP](https://www.apachefriends.org/download.html) ** เลือกตามระบบปฎิบัติการของคุณ
+<br>
+[วิธีการตั้งค่าให้ Xampp รองรับ MongoDB Extension](https://carlofontanos.com/installing-mongodb-in-xampp-windows/)
+
+> ### นำโฟลเดอร์ Frontend ไปวางที่ ```c:\xampp\htdocs```
 
 ---
+
 Author: ```Pasit Y.```
