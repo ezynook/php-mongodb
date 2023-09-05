@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
     <title>PHP-MongoDB</title>
 </head>
-<?php require 'api.php'; $m = $_GET['menu']; ?>
+<?php require 'api.php'; $m = $_GET['menu']; if (!isset($_GET['menu'])){header("location: index.php?menu=home");} ?>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
